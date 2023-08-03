@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Webpack-page
+Comment=Webpack-page KRunner plugin
+X-KDE-ServiceTypes=Plasma/Runner
+Type=Service
+Icon=planetkde
+X-KDE-PluginInfo-Author=%{AUTHOR}
+X-KDE-PluginInfo-Email=kde@example.com
+X-KDE-PluginInfo-Name=webpack-page
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-License=GPL-3.0
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=DBus
+X-Plasma-DBusRunner-Service=net.webpack-page2
+X-Plasma-DBusRunner-Path=/webpack-page
