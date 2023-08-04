@@ -1,0 +1,227 @@
+// initialization
+
+::root{
+    --main-color: #fa8712;
+    --main-color-dark: #fb943b;
+    --secordary-brown: #9b532b;
+    --primary-red-light: #ea4442;
+    --primary-orange: #fa8712;
+    --primary-green-light: #d7e762;
+    --main-text: 'Roboto', sans-serif;
+    --altenative-text: 'Lilita One', sans-serif;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+}
+
+h1{
+    color: black;
+}
+
+body{
+ 
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* container  */
+
+
+/* Nav */
+.navPosition{
+    background: #fa8712;
+     display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+}
+
+.navPosition > h1{
+    flex: 2;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+.navPosition > ul{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navPosition > ul > li{
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    transition: ease .2s;
+}
+
+.navPosition > ul > li:hover{
+    background: #d7e762;
+}
+
+/*Header*/
+.header-div{
+    background: url('./images/header-background.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.main-content{
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.main-content  h1{
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;
+    text-transform: capitalize;
+    color: white;
+    width: 60rem;
+
+}
+
+.main-content span{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 5rem;
+    color: #ea4442;
+    font-style: italic;
+}
+
+.main-content button{
+    background: #ea4442;
+    width: 300px;
+    padding: 15px 10px;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.address-content{
+    background-color: #9b532b;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 2;
+}
+
+.address  > h3{
+   font-size: 1.4rem;
+   font-family: 'Lilita One', sans-serif;
+}
+
+.address > p {
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 950px)
+{
+    .main-content  h1{
+    font-size: 3rem;
+    width: 40rem;
+    line-height: 1.2em;
+    }
+    .main-content span{
+    font-size: 3rem;
+    }
+    .main-content button{
+    width: 200px;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+}
+
+@media screen and (max-width: 740px)
+{
+    .main-content  h1{
+    font-size: 2rem;
+    width: 30rem;
+    line-height: 1.3em;
+    }
+    .main-content span{
+    font-size: 2rem;
+    }
+    .main-content button{
+    width: 100px;
+    padding: 10px;
+    font-size: 12px;
+    }
+    .navPosition > h1{
+    font-size: 1.2rem;
+    }
+    .navPosition > ul{
+        display: none;
+    }
+    .navPosition  {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 500px)
+{
+    .main-content  h1{
+    font-size: 2rem;
+    width: 20rem;
+    line-height: 1.3em;
+    }
+    .main-content span{
+    font-size: 2rem;
+    }
+    .main-content button{
+    width: 100px;
+    padding: 10px;
+    font-size: 12px;
+    }
+    .navPosition > h1{
+    font-size: 1.2rem;
+    }
+    .navPosition > ul{
+        display: none;
+    }
+    .navPosition  {
+        justify-content: center;
+    }
+    .address-content{
+    padding: 5px;
+    flex-direction: column;
+}
+
+
+.address  > h3{
+   font-size: 1.2rem;
+}
+
+}
